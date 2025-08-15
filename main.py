@@ -1,6 +1,9 @@
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 
+placeholder = st.empty()
+
+placeholder1 = st.empty()
     
 def passfr():
 
