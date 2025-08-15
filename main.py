@@ -4005,7 +4005,7 @@ if "log" not in st.session_state:
             
     if st.user.is_logged_in:
         # Code here runs just after login completes successfully
-        st.write(f"Hello, {st.user.name}!")
+        #st.write(f"Hello, {st.user.name}!")
             
         st.session_state.log = 1
         placeholder.empty()
@@ -4028,7 +4028,7 @@ if "log" not in st.session_state:
         
 else:
     
-    st.write(f"Hello, {st.user.name}!")
+    #st.write(f"Hello, {st.user.name}!")
     
     if placeholder1.button("Logout" , width=150):
     
