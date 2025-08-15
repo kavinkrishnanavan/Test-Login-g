@@ -4034,7 +4034,7 @@ else:
 
     st.write(f"Hello, {st.user.name}!")
 
-    if placeholer.button("Pls don't Logout"):
+    if placeholder1.button("Pls don't Logout"):
 
             placeholder1.empty()
 
