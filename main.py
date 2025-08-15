@@ -3994,6 +3994,7 @@ if "log" not in st.session_state:
     if st.user.is_logged_in:
     # Code here runs just after login completes successfully
         st.write(f"Hello, {st.user.name}!")
+        passfr()
     # Your post-login code here
     else:
         st.write("Please log in.")
