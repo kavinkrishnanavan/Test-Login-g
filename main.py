@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.write(st.secrets)
+
 def main():
     if not st.user.is_logged_in:
         st.header("Login Required")
