@@ -4,6 +4,10 @@ from streamlit_pdf_viewer import pdf_viewer
     
 def passfr():
 
+    global placeholder
+
+    global placeholder1
+
     
     import streamlit as st
     import numpy as np
@@ -2413,7 +2417,8 @@ def passfr():
     import streamlit as st
 
     
-    
+    placeholder = st.empty()
+    placeholder1 = st.sidebar.empty()
     
     st.sidebar.markdown("---")
     st.sidebar.caption("Connect with me")
@@ -3994,8 +3999,7 @@ def passfr():
     """)
 
 
-placeholder = st.empty()
-placeholder1 = st.sidebar.empty()
+
     
 if "log" not in st.session_state:
         
