@@ -2417,8 +2417,7 @@ def passfr():
     
     import streamlit as st
 
-    placeholder = st.empty()
-    placeholder1 = st.sidebar.empty()
+    
     
     
     st.sidebar.markdown("---")
@@ -4000,7 +3999,8 @@ def passfr():
     """)
 
 
-
+placeholder = st.empty()
+placeholder1 = st.sidebar.empty()
     
 if "log" not in st.session_state:
         
@@ -4035,7 +4035,7 @@ else:
     
     st.write(f"Hello, {st.user.name}!")
     
-    if placeholder1.sidebar.button("Logout" , width=150).sidebar:
+    if placeholder1.button("Logout" , width=150).sidebar:
     
             placeholder1.empty()
     
