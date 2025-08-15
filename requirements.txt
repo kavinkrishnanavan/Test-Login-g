@@ -1,4 +1,4 @@
 streamlit
 google_auth_oauthlib
 Authlib
-googleapiclient
+google-api-python-client
