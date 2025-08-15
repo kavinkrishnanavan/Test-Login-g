@@ -3987,9 +3987,11 @@ def passfr():
     
 if "log" not in st.session_state:
     
-    if st.button("Login with google"):
+    if g = st.button("Login with google"):
     
-        st.login("google")
+        st.login("google")  
+
+        g.empty()
         
     if st.user.is_logged_in:
     # Code here runs just after login completes successfully
@@ -4003,6 +4005,8 @@ if "log" not in st.session_state:
 
     
 else:
+
+    st.write(f"Hello, {st.user.name}!")
 
     passfr()
     
