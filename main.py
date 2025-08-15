@@ -1,9 +1,6 @@
 import streamlit as st
 
-if st.button("Authenticate"):
+st.button("Authenticate" , onclick=st.login("google"))
 
-    st.login("google")
-
-    st.write("😇🤮😵‍💫")
 
 st.write(st.user["name"])
