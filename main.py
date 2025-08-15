@@ -14,7 +14,7 @@ with tempfile.NamedTemporaryFile(mode='w+', suffix='.json', delete=False) as f:
     temp_file_path = f.name
 
 flow = InstalledAppFlow.from_client_secrets_file(temp_file_path, SCOPES)
-credentials = flow.run_local_server(port=0)
+credentials = flow.run_local_server(port=0, open_browser=False)
 
 st.write("Logged in successfully!")
 
