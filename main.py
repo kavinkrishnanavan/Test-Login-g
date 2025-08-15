@@ -6,5 +6,5 @@ if st.button("Authenticate"):
 
     st.write("😇🤮😵‍💫")
 
-st.write(st.user["name"])
+
 
