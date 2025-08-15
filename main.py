@@ -2417,8 +2417,8 @@ def passfr():
     
     import streamlit as st
 
-    placeholder = st.sidebar.empty()
-    placeholder1 = st.empty()
+    placeholder = st.empty()
+    placeholder1 = st.sidebar.empty()
     
     
     st.sidebar.markdown("---")
