@@ -3982,12 +3982,14 @@ def passfr():
     
     
     
-    
+g =  st.button("Login with google")
+
+g.empty()
     
     
 if "log" not in st.session_state:
     
-    if g = st.button("Login with google"):
+    if g :
     
         st.login("google")  
 
