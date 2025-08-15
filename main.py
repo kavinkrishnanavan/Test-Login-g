@@ -1,13 +1,20 @@
-
 import streamlit as st
+import tempfile
+from google_auth_oauthlib.flow import InstalledAppFlow  # type: ignore
 
-if not st.user.is_logged_in:
-    if st.button("Log in with Google"):
-        # Streamlit uses your secrets.toml to do OAuth flow internally
-        st.login()
-    st.stop()
+SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
-st.write(f"Welcome, {st.user.name}!")
-if st.button("Log out"):
-    st.logout()
-    st.experimental_rerun()
+# Read JSON secrets string from Streamlit secrets
+json_str = st.secrets["o"]
+
+# Write to a temporary JSON file
+with tempfile.NamedTemporaryFile(mode='w+', suffix='.json', delete=False) as temp_file:
+    temp_file.write(json_str)
+    temp_file.flush()
+    temp_file_path = temp_file.name
+
+# Use the temp file path for the OAuth flow
+flow = InstalledAppFlow.from_client_secrets_file(temp_file_path, SCOPES)
+credentials = flow.run_local_server(port=0)
+
+st.write("Logged in with Google!")
