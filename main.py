@@ -4011,7 +4011,7 @@ if "log" not in st.session_state:
         
         st.session_state.log = 1
         placeholder.empty()
-        if placeholer.button("Pls don't Logout"):
+        if placeholder1.button("Pls don't Logout"):
 
             placeholder1.empty()
 
