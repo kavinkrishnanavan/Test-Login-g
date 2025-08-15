@@ -3993,6 +3993,7 @@ def passfr():
 
     
 placeholder = st.empty()
+placeholder1 = st.empty()
 
 
 if "log" not in st.session_state:
@@ -4007,8 +4008,20 @@ if "log" not in st.session_state:
     if st.user.is_logged_in:
     # Code here runs just after login completes successfully
         st.write(f"Hello, {st.user.name}!")
+        
         st.session_state.log = 1
         placeholder.empty()
+        if placeholer.button("Pls don't Logout"):
+
+            placeholder1.empty()
+
+            del st.session_state['log']
+
+            st.logout()
+
+        
+
+            
         passfr()
     # Your post-login code here
     else:
@@ -4020,6 +4033,15 @@ if "log" not in st.session_state:
 else:
 
     st.write(f"Hello, {st.user.name}!")
+
+    if placeholer.button("Pls don't Logout"):
+
+            placeholder1.empty()
+
+            del st.session_state['log']
+
+            st.logout()
+    
 
     passfr()
 
