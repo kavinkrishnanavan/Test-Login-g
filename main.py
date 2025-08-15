@@ -3985,7 +3985,6 @@ def passfr():
     
 placeholder = st.empty()
 
-st.logout()
 
 if "log" not in st.session_state:
     
@@ -4003,6 +4002,7 @@ if "log" not in st.session_state:
         passfr()
     # Your post-login code here
     else:
+        
         st.write("Please log in.")
     
 
