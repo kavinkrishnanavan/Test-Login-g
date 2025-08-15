@@ -3981,13 +3981,6 @@ def passfr():
         pdf_file_path = "Liquid in Gas Carryover Report.pdf"
         with open(pdf_file_path, "rb") as pdf_file:
             PDFbyte = pdf_file.read()
-        # Display PDF file using streamlit's built-in PDF viewer
-        st.download_button(
-            label="Download PDF",
-            data=PDFbyte,
-            file_name="Liquid in Gas Carryover Report.pdf",
-            mime="application/pdf"
-        )
         pdf_viewer(PDFbyte)
 
 
