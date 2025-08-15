@@ -3991,13 +3991,13 @@ if "log" not in st.session_state:
     
         st.login("google")
         
-        st.session_state.log = 1
+    st.session_state.log = 1
     
-        passfr()
-    
-    else:
 
-        passfr()
+    
+else:
+
+    passfr()
     
     
     
