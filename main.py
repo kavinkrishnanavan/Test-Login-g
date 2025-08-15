@@ -2407,7 +2407,7 @@ def passfr():
     
     #st.sidebar.image("Sep.png", caption="", width=150)
     st.sidebar.markdown("<h3 style='font-size: 16px;'><b>NAVIGATION BAR</b></h3>", unsafe_allow_html=True)
-    page = st.sidebar.radio("",["App Overview", "Input Parameters", "Flow Regime", "Calculation Results", "Carry Over Plots", "Summary of Results", "Generate Report"]) #, "References"])
+    page = st.sidebar.radio("",["App Overview", "Input Parameters", "Flow Regime", "Calculation Results", "Carry Over Plots", "Summary of Results", "Generate Report", "Manual"]) #, "References"])
     
     import streamlit as st
     
@@ -3975,6 +3975,9 @@ def passfr():
             df = pd.DataFrame(summary_data)
             st.table(df)
     
+    # --- Page: Flow Regime ---
+    elif page == "Manual":
+        st.write("Manual")
         
     st.markdown(r"""
     ---
