@@ -2,15 +2,13 @@ import streamlit as st
 
 if "log" not in st.session_state:
 
-   
-
     st.login("google")
     
     st.session_state.log = 1
 
 else:
 
-    pass
+    1
 
 import streamlit as st
 import numpy as np
