@@ -4014,8 +4014,7 @@ else:
 
     passfr()
     
-    
-    
+st.logout()
     
     
     
