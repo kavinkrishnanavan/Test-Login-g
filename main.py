@@ -3991,7 +3991,7 @@ def see():
 
 
 
-placeholder.st.button("Login with google" , onlick=see())
+placeholder.button("Login with google" , onlick=see())
 
     
 if "log" not in st.session_state:
