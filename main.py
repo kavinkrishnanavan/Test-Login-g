@@ -2,9 +2,9 @@ import streamlit as st
 
 if "log" not in st.session_state:
 
-    if st.button("Authenticate"):
+   
 
-        st.login("google")
+    st.login("google")
     
     st.session_state.log = 1
 
