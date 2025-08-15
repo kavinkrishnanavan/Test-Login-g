@@ -1,11 +1,18 @@
 import streamlit as st
 
-from google_auth_oauthlib.flow import InstalledAppFlow # type: ignore
+def main():
+    if not st.user.is_logged_in:
+        st.header("Login Required")
+        st.button("Log in with Google", on_click=st.login)
+        st.stop()  # Stop the rest of the app until logged in
+    
+    # Once logged in
+    st.header(f"Welcome, {st.user.name}!")
+    st.write(f"Your email is: {st.user.email}")
 
-api_key = st.secrets["o"]
+    if st.button("Log out"):
+        st.logout()
+        st.experimental_rerun()
 
-SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
-flow = InstalledAppFlow.from_client_secrets_file(api_key, SCOPES)
-credentials = flow.run_local_server(port=0)
-
-st.write("Test 123")
+if __name__ == "__main__":
+    main()
