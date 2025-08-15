@@ -4013,8 +4013,7 @@ else:
     st.write(f"Hello, {st.user.name}!")
 
     passfr()
-    
-st.logout()
+
     
     
     
