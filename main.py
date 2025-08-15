@@ -3991,7 +3991,7 @@ if "log" not in st.session_state:
     if placeholder.button("Login with google"):
 
         st.login("google")  
-        placeholder.empty()
+
 
        
         
@@ -3999,6 +3999,7 @@ if "log" not in st.session_state:
     # Code here runs just after login completes successfully
         st.write(f"Hello, {st.user.name}!")
         st.session_state.log = 1
+        placeholder.empty()
         passfr()
     # Your post-login code here
     else:
