@@ -2411,7 +2411,9 @@ def passfr():
     
     import streamlit as st
 
-   
+   placeholder = st.sidebar.empty()
+   placeholder1 = st.sidebar.empty()
+    
     
     st.sidebar.markdown("---")
     st.sidebar.caption("Connect with me")
@@ -3992,50 +3994,48 @@ def passfr():
     """)
 
 
- placeholder = st.empty()
-    placeholder1 = st.empty()
+
     
-    
-    if "log" not in st.session_state:
+if "log" not in st.session_state:
         
-        if placeholder.button("Login with google"):
+    if placeholder.button("Login with google"):
     
-            st.login("google") 
+        st.login("google") 
             
-        if st.user.is_logged_in:
+    if st.user.is_logged_in:
         # Code here runs just after login completes successfully
-            st.write(f"Hello, {st.user.name}!")
-            
-            st.session_state.log = 1
-            placeholder.empty()
-            if placeholder1.button("Logout" , width=150):
-    
-                placeholder1.empty()
-    
-                del st.session_state['log']
-    
-                st.logout()
-    
-                
-            passfr()
-        # Your post-login code here
-        else:
-            
-            st.write("Please log in.")
-        
-    
-        
-    else:
-    
         st.write(f"Hello, {st.user.name}!")
-    
+            
+        st.session_state.log = 1
+        placeholder.empty()
         if placeholder1.button("Logout" , width=150):
     
-                placeholder1.empty()
+            placeholder1.empty()
     
-                del st.session_state['log']
+            del st.session_state['log']
     
-                st.logout()
+            st.logout()
+    
+                
+        passfr()
+        # Your post-login code here
+    else:
+            
+        st.write("Please log in.")
+        
+    
+        
+else:
+    
+    st.write(f"Hello, {st.user.name}!")
+    
+    if placeholder1.button("Logout" , width=150):
+    
+            placeholder1.empty()
+    
+            del st.session_state['log']
+    
+            st.logout()
         
     
         passfr()
