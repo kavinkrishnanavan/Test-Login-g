@@ -3978,6 +3978,11 @@ def passfr():
     # --- Page: Flow Regime ---
     elif page == "Manual":
         st.write("Manual")
+        pdf_file_path = "Liquid in Gas Carryover Report.pdf"
+        with open(pdf_file_path, "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+        st.pdf(PDFbyte)
+
         
     st.markdown(r"""
     ---
