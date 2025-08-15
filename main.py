@@ -1,4 +1,4 @@
-limport streamlit as st
+import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 
 placeholder = st.empty()
