@@ -2,7 +2,7 @@ import streamlit as st
     
 
     
-def pass():
+def passfr():
     
     import streamlit as st
     import numpy as np
@@ -3993,11 +3993,11 @@ if "log" not in st.session_state:
         
     st.session_state.log = 1
     
-    pass()
+    passfr()
     
     else:
 
-        pass()
+        passfr()
     
     
     
