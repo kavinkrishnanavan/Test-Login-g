@@ -3979,27 +3979,22 @@ def passfr():
     st.markdown(r"""
     ---
     """)
+
+
+
     
 placeholder = st.empty()
-def see():
-    
-    st.login("google")  
 
-    placeholder.empty()
+st.logout()
 
-    
-
-
-
-
-
-
-    
 if "log" not in st.session_state:
     
     if placeholder.button("Login with google"):
 
-        see()
+        st.login("google")  
+        placeholder.empty()
+
+       
         
     if st.user.is_logged_in:
     # Code here runs just after login completes successfully
