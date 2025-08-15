@@ -3987,7 +3987,7 @@ def passfr():
     
 if "log" not in st.session_state:
     
-    if st.button("Login with google")
+    if st.button("Login with google"):
     
         st.login("google")
         
