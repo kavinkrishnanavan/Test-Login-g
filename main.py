@@ -1,14 +1,9 @@
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 
-placeholder = st.empty()
-placeholder1 = st.empty()
     
 def passfr():
 
-    global placeholder
-
-    global placeholder1
     
     import streamlit as st
     import numpy as np
@@ -4035,7 +4030,7 @@ else:
     
     st.write(f"Hello, {st.user.name}!")
     
-    if placeholder1.button("Logout" , width=150).sidebar:
+    if placeholder1.button("Logout" , width=150):
     
             placeholder1.empty()
     
