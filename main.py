@@ -1,5 +1,5 @@
 import streamlit as st
-    
+from streamlit_pdf_viewer import pdf_viewer
 
     
 def passfr():
@@ -3988,7 +3988,8 @@ def passfr():
             file_name="Liquid in Gas Carryover Report.pdf",
             mime="application/pdf"
         )
-        st.pdf(PDFbyte)
+        pdf_viewer("str, path or bytes")
+
 
         
     st.markdown(r"""
