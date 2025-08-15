@@ -2387,7 +2387,7 @@ def passfr():
     #with tit1:
         #st.header("🛢️ Oil and Gas Separator")
     
-    st.sidebar.markdown("<h3 style='font-size: 20px;'><b>"+"Welcome "+ st.user["given_name"].upper() + "!</b></h3>", unsafe_allow_html=True)
+    st.sidebar.markdown("<h3 style='font-size: 20px;'><b>"+"Welcome   "+ st.user["given_name"].upper() + "!</b></h3>", unsafe_allow_html=True)
     
     
     with st.sidebar:
