@@ -2421,8 +2421,22 @@ def passfr():
     
     import streamlit as st
 
+    with placeholder:
+        if 'log' not in st.session_state:
+            if st.button("Login with google"):
+                st.login("google")
     
+    if st.user.is_logged_in:
+        st.session_state.log = 1
+        placeholder.empty()
+        if placeholder1.button("Logout" , width=150):
+            placeholder1.empty()
+            del st.session_state['log']
+            st.logout()
     
+        passfr()
+    else:
+        st.write("Please log in.")
     
     st.sidebar.markdown("---")
     st.sidebar.caption("Connect with me")
