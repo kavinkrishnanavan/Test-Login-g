@@ -3988,7 +3988,7 @@ def passfr():
             file_name="Liquid in Gas Carryover Report.pdf",
             mime="application/pdf"
         )
-        pdf_viewer("str, path or bytes")
+        pdf_viewer(PDFbyte)
 
 
         
