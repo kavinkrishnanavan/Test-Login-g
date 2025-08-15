@@ -3,7 +3,7 @@ import tempfile
 from google_auth_oauthlib.flow import InstalledAppFlow  # type: ignore
 
 SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
-
+st.write(st.secrets["o"])
 # Read the literal JSON string
 json_str = st.secrets["o"]
 
