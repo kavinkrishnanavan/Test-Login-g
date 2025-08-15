@@ -1,8 +1,14 @@
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 
+placeholder = st.empty
+placeholder1 = st.empty
     
 def passfr():
+
+    global placeholder
+
+    global placeholder1
     
     import streamlit as st
     import numpy as np
@@ -2412,7 +2418,7 @@ def passfr():
     import streamlit as st
 
     placeholder = st.sidebar.empty()
-    placeholder1 = st.sidebar.empty()
+    placeholder1 = st.empty()
     
     
     st.sidebar.markdown("---")
