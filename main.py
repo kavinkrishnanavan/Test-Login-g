@@ -4011,9 +4011,9 @@ if "log" not in st.session_state:
         
         st.session_state.log = 1
         placeholder.empty()
-        if placeholder1.button("Logout" , width=150):
+        if placeholder1.sidebar.button("Logout" , width=150):
 
-            placeholder1.empty()
+            placeholder1.sidebar.empty()
 
             del st.session_state['log']
 
@@ -4034,9 +4034,9 @@ else:
 
     st.write(f"Hello, {st.user.name}!")
 
-    if placeholder1.button("Logout" , width=150):
+    if placeholder1.button.sidebar("Logout" , width=150):
 
-            placeholder1.empty()
+            placeholder1.sidebar.empty()
 
             del st.session_state['log']
 
