@@ -1,2 +1,6 @@
 streamlit
 authlib
+numpy
+scipy
+matplotlib
+fpdf2
