@@ -3980,20 +3980,23 @@ def passfr():
     ---
     """)
     
-    
-    
-g =  st.button("Login with google")
+placeholder = st.empty()
+def see():
+    st.login("google")  
 
-g.empty()
+    placeholder.empty
+
     
+
+
+
+
+placeholder.st.button("Login with google" , onlick=see())
+
     
 if "log" not in st.session_state:
     
-    if g :
     
-        st.login("google")  
-
-        g.empty()
         
     if st.user.is_logged_in:
     # Code here runs just after login completes successfully
