@@ -1,4 +1,4 @@
-import streamlit as st
+limport streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 
 placeholder = st.empty()
@@ -4035,7 +4035,7 @@ else:
     
     st.write(f"Hello, {st.user.name}!")
     
-    if placeholder1.button("Logout" , width=150):
+    if placeholder1.button("Logout" , width=150).sidebar:
     
             placeholder1.empty()
     
