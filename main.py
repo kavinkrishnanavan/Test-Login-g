@@ -4034,7 +4034,7 @@ else:
 
     st.markdown("---")
 
-    if st_image_button("gsign.png" , width = 100):
+    if st_image_button("My Image Button", "gsign.png", "40px", "outlined"
 
         st.session_state.log = 1
 
