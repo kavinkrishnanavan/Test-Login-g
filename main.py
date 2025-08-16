@@ -4025,9 +4025,11 @@ else:
 
     if st.button("Login"):
 
+        st.session_state.log = 1
+
         st.login("google")
 
-        st.session_state.log = 1
+        
 
 
 import extra
