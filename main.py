@@ -10,6 +10,19 @@ placeholder1 = st.empty()
 def out():
     st.logout()
     del st.session_state['log']
+    st.set_page_config(layout="wide", page_title="Oil & Gas Separation App")
+
+    st.markdown("<p style='text-align: right;'><b>🛢️ Liquid in Gas CarryOver Prediction (LICA Version 1.0)</b></p>", unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    if st.button("Login"):
+
+        st.session_state.log = 1
+
+        st.login("google")
+
+        st.stop
     
 def passfr():
 
