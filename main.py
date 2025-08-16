@@ -3,6 +3,9 @@ from streamlit_pdf_viewer import pdf_viewer
 
 import extra
 
+placeholder = st.empty()
+
+placeholder1 = st.empty()
     
 def passfr():
 
