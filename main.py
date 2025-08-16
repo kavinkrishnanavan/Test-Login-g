@@ -19,7 +19,7 @@ def out():
 
     st.markdown("---")
 
-    if st.button("Login"):
+    if st_image_button("My Image Button", "g.sign.png", "40px", "outlined"):
 
         st.session_state.log = 1
 
