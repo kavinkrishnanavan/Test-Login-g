@@ -2424,7 +2424,7 @@ def passfr():
 
     import extra
 
-    st.sidebar.write("Sidebar Test")
+    st.sidebar.caption("Sidebar Test")
     
     st.sidebar.markdown("---")
     st.sidebar.caption("Connect with me")
