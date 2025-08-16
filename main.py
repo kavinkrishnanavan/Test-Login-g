@@ -9,6 +9,7 @@ placeholder1 = st.empty()
 
 def out():
     import streamlit as st
+    st.empty()
     st.logout()
     del st.session_state['log']
     st.set_page_config(layout="wide", page_title="Oil & Gas Separation App")
