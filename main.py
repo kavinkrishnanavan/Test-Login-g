@@ -4025,7 +4025,11 @@ if st.user.is_logged_in:
 
         st.session_state.log = 1
 
-        extra.call()
+        def gogo1():
+
+            extra.call()
+
+        gogo1()
     else:
 
         def gogo():
