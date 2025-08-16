@@ -9,6 +9,7 @@ placeholder1 = st.empty()
 
 def out():
     st.logout()
+    del st.session_state['log']
     
 def passfr():
 
