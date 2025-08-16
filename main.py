@@ -4031,7 +4031,7 @@ else:
 
     st.markdown("---")
 
-     img = Image.open("icon.png")
+    img = Image.open("icon.png")
 
     if st.button(st.image(img)):
 
