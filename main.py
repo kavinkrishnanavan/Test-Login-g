@@ -4151,7 +4151,7 @@ else:
         unsafe_allow_html=True
     )
 
-    if st.button("HEllo):
+    if st.button("HEllo"):
 
         st.session_state.log = 1
 
