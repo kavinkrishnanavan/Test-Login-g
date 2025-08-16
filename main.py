@@ -12,7 +12,6 @@ def passfr():
     global placeholder
 
     global placeholder1
-
     
     import streamlit as st
     import numpy as np
