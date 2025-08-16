@@ -2418,10 +2418,7 @@ def passfr():
     
     import streamlit as st
 
-    import extra
 
-    
-    
     st.sidebar.markdown("---")
     st.sidebar.button("Logout" , on_click = st.logout())
     st.sidebar.caption("Connect with me!")
