@@ -4009,7 +4009,11 @@ if st.user.is_logged_in:
         extra.call()
     else:
 
-        extra.call()
+        def gogo():
+
+            extra.call()
+
+        gogo()
 
 else:
 
