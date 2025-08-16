@@ -4029,6 +4029,8 @@ else:
 
         st.login("google")
 
+        st.stop
+
         
 
 
