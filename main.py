@@ -1,6 +1,8 @@
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 
+import extra as et
+
 placeholder = st.empty()
 
 placeholder1 = st.sidebar.empty()
@@ -4024,7 +4026,7 @@ if "log" not in st.session_state:
             st.logout()
     
                 
-        passfr()
+        et.call()
         # Your post-login code here
     else:
             
@@ -4045,7 +4047,7 @@ else:
             st.logout()
         
     
-    passfr()
+    et.call()
 
     
     
