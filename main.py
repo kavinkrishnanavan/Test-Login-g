@@ -2425,7 +2425,47 @@ def passfr():
 
     import extra
 
-    
+    if "log" not in st.session_state:
+        
+        if placeholder.button("Login with google"):
+        
+            st.login("google") 
+                
+        if st.user.is_logged_in:
+            # Code here runs just after login completes successfully
+            #st.write(f"Hello, {st.user.name}!")
+                
+            st.session_state.log = 1
+            placeholder.empty()
+            if placeholder1.button("Logout" , width=150):
+        
+                placeholder1.empty()
+        
+                del st.session_state['log']
+        
+                st.logout()
+        
+                    
+            extra.call()
+            # Your post-login code here
+        else:
+                
+            st.write("Please log in.")
+            
+        
+            
+    else:
+        
+        #st.write(f"Hello, {st.user.name}!")
+        
+        if placeholder1.button("Logout" , width=150):
+        
+                placeholder1.empty()
+        
+                del st.session_state['log']
+        
+                st.logout()
+        extra.call()
     
     st.sidebar.markdown("---")
     st.sidebar.caption("Connect with me")
@@ -4007,47 +4047,7 @@ def passfr():
 
 
 
-if "log" not in st.session_state:
-        
-    if placeholder.button("Login with google"):
-    
-        st.login("google") 
-            
-    if st.user.is_logged_in:
-        # Code here runs just after login completes successfully
-        #st.write(f"Hello, {st.user.name}!")
-            
-        st.session_state.log = 1
-        placeholder.empty()
-        if placeholder1.button("Logout" , width=150):
-    
-            placeholder1.empty()
-    
-            del st.session_state['log']
-    
-            st.logout()
-    
-                
-        extra.call()
-        # Your post-login code here
-    else:
-            
-        st.write("Please log in.")
-        
-    
-        
-else:
-    
-    #st.write(f"Hello, {st.user.name}!")
-    
-    if placeholder1.button("Logout" , width=150):
-    
-            placeholder1.empty()
-    
-            del st.session_state['log']
-    
-            st.logout()
-    extra.call()
+passfr()
 
     
     
