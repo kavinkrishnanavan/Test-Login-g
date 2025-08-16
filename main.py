@@ -2405,7 +2405,7 @@ def passfr():
     
         with col2:
             st.image("Sep.png", caption="", width=100)
-        with col1:
+        with col2:
             placeholder1 = st.sidebar.empty()
             
     st.sidebar.markdown("<h3 style='font-size: 16px;'><b>Liquid in Gas CarryOver Prediction</b></h3>", unsafe_allow_html=True)
