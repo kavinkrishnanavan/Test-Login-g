@@ -4031,7 +4031,9 @@ else:
 
     st.markdown("---")
 
-    if st.button("![Google Logo](https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg) Sign in with Google"):
+     img = Image.open("icon.png")
+
+    if st.button(st.image(img)):
 
         st.session_state.log = 1
 
