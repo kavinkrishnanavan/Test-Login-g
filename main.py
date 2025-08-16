@@ -4015,7 +4015,7 @@ if st.user.is_logged_in:
 
 else:
 
-    st.login("google)
+    st.login("google")
 
     st.session_state.log = 1
 
