@@ -4016,7 +4016,13 @@ def passfr():
     ---
     """)
 
+
+
 import extra
+
+def gogoyu():
+    extra.call()
+
 
 if st.user.is_logged_in:
 
@@ -4024,23 +4030,10 @@ if st.user.is_logged_in:
     if "log" not in st.session_state:
 
         st.session_state.log = 1
-
-        def gogo1():
-
-            import extra
-
-            extra.call()
-
-        gogo1()
+        gogoyu()
     else:
 
-        def gogo():
-
-            import extra
-
-            extra.call()
-
-        gogo()
+        gogoyu()
 
 else:
 
