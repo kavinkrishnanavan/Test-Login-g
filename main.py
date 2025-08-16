@@ -4027,12 +4027,16 @@ if st.user.is_logged_in:
 
         def gogo1():
 
+            import extra
+
             extra.call()
 
         gogo1()
     else:
 
         def gogo():
+
+            import extra
 
             extra.call()
 
@@ -4055,7 +4059,7 @@ else:
         st.stop
 
 
-        
+import extra
         
                 
              
