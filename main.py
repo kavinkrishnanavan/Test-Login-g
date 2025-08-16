@@ -3998,6 +3998,7 @@ def passfr():
     ---
     """)
 
+import extra
 
 if st.user.is_logged_in:
 
