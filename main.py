@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 
+st.set_page_config(layout="wide", page_title="LICA 1.0" , page_icon="Favi2.png")
 import extra
 
 placeholder = st.empty()
@@ -12,7 +13,7 @@ def out():
     st.empty()
     st.logout()
     del st.session_state['log']
-    st.set_page_config(layout="wide", page_title="Oil & Gas Separation App")
+    
 
     st.markdown("<p style='text-align: right;'><b>🛢️ Liquid in Gas CarryOver Prediction (LICA Version 1.0)</b></p>", unsafe_allow_html=True)
 
