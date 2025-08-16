@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
+from st_image_button import st_image_button
 
 st.set_page_config(layout="wide", page_title="LICA 1.0" , page_icon="Favi2.png")
 import extra
@@ -15,17 +16,7 @@ def out():
     del st.session_state['log']
     
 
-    st.markdown("<p style='text-align: right;'><b>🛢️ Liquid in Gas CarryOver Prediction (LICA Version 1.0)</b></p>", unsafe_allow_html=True)
-
-    st.markdown("---")
-
-    if st_image_button("My Image Button", "g.sign.png", "40px", "outlined"):
-
-        st.session_state.log = 1
-
-        st.login("google")
-
-        st.stop
+    
     
 def passfr():
 
@@ -4039,13 +4030,11 @@ if st.user.is_logged_in:
 
 else:
 
-    st.set_page_config(layout="wide", page_title="Oil & Gas Separation App")
-
     st.markdown("<p style='text-align: right;'><b>🛢️ Liquid in Gas CarryOver Prediction (LICA Version 1.0)</b></p>", unsafe_allow_html=True)
 
     st.markdown("---")
 
-    if st.button("Login"):
+    if st_image_button("My Image Button", "gsign.png", "40px", "outlined"):
 
         st.session_state.log = 1
 
