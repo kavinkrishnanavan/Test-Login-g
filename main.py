@@ -9,8 +9,6 @@ placeholder1 = st.empty()
     
 def passfr():
 
-
-    
     import streamlit as st
     import numpy as np
     from scipy.special import erf
@@ -4011,24 +4009,7 @@ if "log" not in st.session_state:
         st.login("google") 
         st.session_state.log = 1
                 
-    if st.user.is_logged_in:
-        
-            # Code here runs just after login completes successfully
-            #st.write(f"Hello, {st.user.name}!")
-                
-        st.session_state.log = 1
-        placeholder.empty()
-        if placeholder1.button("Logout" , width=150):
-        
-            placeholder1.empty()
-        
-            del st.session_state['log']
-        
-            st.logout()
-        
-                    
-        extra.call()
-            # Your post-login code here
+  
     else:
                 
         st.write("Please log in.")
@@ -4038,6 +4019,7 @@ if "log" not in st.session_state:
 else:
         
         #st.write(f"Hello, {st.user.name}!")
+    placeholder.empty()
         
     if placeholder1.button("Logout" , width=150):
         
