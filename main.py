@@ -2423,6 +2423,8 @@ def passfr():
     
     import streamlit as st
 
+    import extra
+
     with placeholder:
         if 'log' not in st.session_state:
             if st.button("Login with google"):
