@@ -4034,7 +4034,7 @@ else:
 
     st.markdown("---")
 
-    if st_image_button("my_button", "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg", width="50px", outlined=True):
+    if st_image_button("my_button", "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg", width="50px"):
 
         st.session_state.log = 1
 
