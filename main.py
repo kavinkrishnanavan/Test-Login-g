@@ -4033,7 +4033,7 @@ else:
 
     img = Image.open("icon.png")
 
-    if st.button("Login with " , icon=img):
+    if st.button("Login with {i}".format(i = st.logo(img))):
 
         st.session_state.log = 1
 
