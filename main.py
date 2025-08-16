@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 from st_image_button import st_image_button
-
+from PIL import Image
 st.set_page_config(layout="wide", page_title="LICA 1.0" , page_icon="Favi2.png")
 import extra
 
