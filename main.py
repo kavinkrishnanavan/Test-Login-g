@@ -7,7 +7,6 @@ placeholder = st.empty()
 
 placeholder1 = st.empty()
 
-st.logout()
     
 def passfr():
 
