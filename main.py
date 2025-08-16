@@ -7,6 +7,8 @@ placeholder = st.empty()
 
 placeholder1 = st.empty()
 
+def out():
+    st.logout()
     
 def passfr():
 
@@ -2421,7 +2423,7 @@ def passfr():
 
 
     st.sidebar.markdown("---")
-    st.sidebar.button("Logout" , on_click = st.logout())
+    st.sidebar.button("Logout" , on_click = out())
     st.sidebar.caption("Connect with me!")
     st.sidebar.caption("Feel free to connect with me on LinkedIn for further details or collaboration.")
     st.sidebar.markdown("[![My LinkedIn Profile](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/navaneethakrishnan-kannan/)")
