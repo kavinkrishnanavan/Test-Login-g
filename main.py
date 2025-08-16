@@ -15,9 +15,6 @@ def out():
     st.logout()
     del st.session_state['log']
     
-
-    
-    
 def passfr():
 
     import streamlit as st
@@ -4040,7 +4037,7 @@ else:
 
         st.login("google")
 
-        st.stop
+        st.stop()
 
 
 import extra
