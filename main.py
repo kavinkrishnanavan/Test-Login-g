@@ -2427,7 +2427,7 @@ def passfr():
     
     
     st.sidebar.markdown("---")
-    st.sidebar.write("Sidebar Test")
+    st.sidebar.button("Logout" , onlick=st.logout())
     st.sidebar.caption("Connect with me!")
     st.sidebar.caption("Feel free to connect with me on LinkedIn for further details or collaboration.")
     st.sidebar.markdown("[![My LinkedIn Profile](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/navaneethakrishnan-kannan/)")
