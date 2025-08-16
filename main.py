@@ -1805,7 +1805,7 @@ def passfr():
     
     # --- Streamlit App Layout ---
     
-    st.set_page_config(layout="wide", page_title="Oil & Gas Separation App")
+    st.set_page_config(layout="wide", page_title="LICA 1.0" , page_icon="Favi2.png")
     
     tit1, tit2 = st.columns(2)
     #with tit1:
