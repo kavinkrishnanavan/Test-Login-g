@@ -5,3 +5,4 @@ scipy
 matplotlib
 fpdf2
 streamlit-pdf-viewer
+streamlit-image-button
