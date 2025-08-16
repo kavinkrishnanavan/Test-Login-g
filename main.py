@@ -4033,7 +4033,7 @@ else:
 
     img = Image.open("icon.png")
 
-    if st.button(":google: {i}".format(i = st.image(img))):
+    if st.button(""):
 
         st.session_state.log = 1
 
